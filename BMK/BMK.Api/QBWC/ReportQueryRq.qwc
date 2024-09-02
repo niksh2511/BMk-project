@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<?qbxml version="13.0"?>
+<QBXML>
+    <QBXMLMsgsRq onError="stopOnError">
+        <ReportQueryRq requestID="1">
+            <ReportType>BalanceSheet</ReportType>
+            <DisplayReport>false</DisplayReport>
+        </ReportQueryRq>
+    </QBXMLMsgsRq>
+</QBXML>

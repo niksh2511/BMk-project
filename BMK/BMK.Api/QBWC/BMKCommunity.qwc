@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<QBWCXML>
+<AppName>BMK Community Quickbooks Connector</AppName>
+<AppID></AppID>
+<AppURL>{qbAppUrl}</AppURL>
+<CertURL>{appUrl}</CertURL>
+<AppDescription>BMK Community Quickbooks Connector Definition</AppDescription>
+<AppSupport>{appUrl}</AppSupport>
+<CertURL>{appUrl}</CertURL>
+<UserName>{userName}</UserName>
+<OwnerID>{ownerId}</OwnerID>
+<FileID>{fileId}</FileID>
+<QBType>QBFS</QBType>
+<Scheduler>
+<RunEveryNMinutes>1440</RunEveryNMinutes>
+<IsReadOnly>true</IsReadOnly>
+</Scheduler>
+</QBWCXML>

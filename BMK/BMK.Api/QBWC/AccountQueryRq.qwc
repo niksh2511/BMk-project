@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<?qbxml version="13.0"?>
+<QBXML>
+    <QBXMLMsgsRq onError="stopOnError">
+        <AccountQueryRq requestID="1">
+            <ListID>ALL</ListID>
+        </AccountQueryRq>
+    </QBXMLMsgsRq>
+</QBXML>

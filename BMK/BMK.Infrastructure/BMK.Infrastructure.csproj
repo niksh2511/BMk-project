@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include="..\BMK.Models\BMK.Models.csproj" />
+		<ProjectReference Include="..\BMK.BoundedContext\BMK.BoundedContext.csproj" />
+		<ProjectReference Include="..\BMK.UnitOfWork\BMK.UnitOfWork.csproj" />
+		<ProjectReference Include="..\RxWeb\RxWeb.Core.Annotations\RxWeb.Core.Annotations.csproj" />
+		<ProjectReference Include="..\RxWeb\RxWeb.Core.Cache\RxWeb.Core.Cache.csproj" />
+		<ProjectReference Include="..\RxWeb\RxWeb.Core.Sanitizers\RxWeb.Core.Sanitizers.csproj" />
+		<ProjectReference Include="..\RxWeb\RxWeb.Core.Security\RxWeb.Core.Security.csproj" />
+		<ProjectReference Include="..\RxWeb\RxWeb.Core\RxWeb.Core.csproj" />
+	</ItemGroup>
+
+
+</Project>
