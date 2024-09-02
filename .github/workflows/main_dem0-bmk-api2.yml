@@ -1,7 +1,4 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Build and deploy ASP.Net Core app to Azure Web App - dem0-BMK-api2
+name: Build and Deploy ASP.NET Core App to Azure Web App - dem0-BMK-api2
 
 on:
   push:
@@ -25,13 +22,13 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish -c Release -o ./publish
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          path: ./publish
 
   deploy:
     runs-on: windows-latest
@@ -45,12 +42,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: .net-app
-      
+
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'dem0-BMK-api2'
           slot-name: 'Production'
-          package: .
+          package: ./  # Ensure this path matches the location of your artifact
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0376B42C78BC460CB2E98869D1FA25A6 }}
